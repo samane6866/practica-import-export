@@ -5,3 +5,15 @@
  *
  * 3. ¿Serías capaz de ubicar la imagen a partir de las coordenadas GPS que arroja la consola?
  */
+
+import exif from "jpeg-exif";
+
+const filePath = "/home/samane/PIMEC2023/practica-import-export/DSCN0010.jpg";
+
+exif.parse(filePath, (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+});
