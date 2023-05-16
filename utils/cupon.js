@@ -1,5 +1,7 @@
 /** Ejercicio 2: Exporta la función correctamente para que ex2.js la pueda utilizar  */
 
+export default checkCoupon;
+
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   // Comenzamos definiendo la función checkCoupon que toma cuatro parámetros: enteredCode, correctCode, currentDate, y expirationDate. Estos parámetros representan el código que ha introducido el usuario, el código correcto del cupón, la fecha actual, y la fecha de caducidad del cupón, respectivamente.
   let enteredDate = new Date(currentDate);
